@@ -114,6 +114,18 @@ a {
   margin-bottom: 10px;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.text-webkit-right {
+  text-align: -webkit-right;
+}
+
+strong {
+  font-weight: 700;
+}
+
 .primary-btn {
   font-style: normal;
   font-weight: 400;
@@ -261,7 +273,7 @@ a {
   padding: 5px 10px;
   margin: 0;
   height: 25px;
-  background: #EEF0FC;
+  background: #eef0fc;
   border-radius: 50px;
 }
 
@@ -276,7 +288,7 @@ a {
 .tags-input-container .tag .remove-tag {
   cursor: pointer;
   font-size: 1.6rem;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .tag-input {
@@ -308,12 +320,13 @@ a {
   align-items: center;
 }
 
-input.search-radio:checked+label.primary-btn {
+input.search-radio:checked + label.primary-btn {
   box-shadow: inset 0 0 10px 1px #000000a6;
   font-weight: 700;
 }
 
-.country-select {
+.country-select,
+.profile-select {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -327,12 +340,14 @@ input.search-radio:checked+label.primary-btn {
   cursor: pointer;
 }
 
-.country-select option {
+.country-select option,
+.profile-select option {
   background-color: var(--primary-text-color);
   color: white;
 }
 
-.country-select.form-select:focus {
+.country-select.form-select:focus,
+.profile-select.form-select:focus {
   border-color: #e0e0e0;
   outline: 0;
   box-shadow: none;
@@ -382,7 +397,10 @@ input.search-radio:checked+label.primary-btn {
 #shipment-detail-table_wrapper .dt-length,
 #shipment-detail-table_wrapper .dt-search,
 #shipment-detail-table_wrapper .dt-column-order,
-#shipment-detail-table_wrapper .dt-info {
+#shipment-detail-table_wrapper .dt-info,
+#profile-views-table_wrapper .dt-length,
+#profile-views-table_wrapper .dt-search,
+#profile-views-table_wrapper .dt-info {
   display: none;
 }
 
@@ -448,7 +466,8 @@ body .dt-paging-button:hover {
 }
 
 #comp-director-table_wrapper .dt-paging nav,
-#shipment-detail-table_wrapper .dt-paging nav {
+#shipment-detail-table_wrapper .dt-paging nav,
+#profile-views-table_wrapper .dt-paging nav {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -482,14 +501,192 @@ body .dt-paging-button:hover {
   line-height: 12px;
   color: var(--primary-text-color);
   padding: 6px 10px;
-  background-color: #FFC65A;
-  border: 1px solid #E0E0E0;
+  background-color: #ffc65a;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 .sm-primary-btn:hover {
   box-shadow: inset 0px 0px 10px 0px #0000005e;
 }
 .sm-primary-btn.btn-2 {
-  background-color: #BCD4FF;
-} 
+  background-color: #bcd4ff;
+}
+.section-title-area .breadcrumb-item a,
+.section-title-area .breadcrumb-item,
+.company-detail-box .breadcrumb .breadcrumb-item a,
+.company-detail-box .breadcrumb .breadcrumb-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: #7c59ff;
+}
+.trade-analysis-filter-area,
+.profile-views-filter-area,
+.company-profile-filter-area {
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+.sm-btn,
+.pro-filter-select,
+.pro-filter-search,
+.com-country-select {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background-color: #9ef7ce;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  outline: none;
+}
+.pro-filter-search::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: var(--primary-text-color);
+}
+.filter-btns-right-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.filter-btn {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+/* filter css start */
+
+.currency-filter-list {
+  padding: 15px 10px;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 #0000001c;
+  border-radius: 15px;
+  position: absolute;
+  top: 35px;
+  z-index: 1111;
+  left: 0;
+  opacity: 0;
+}
+
+.currency-radio-label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.currency-filter-list .currency-filter-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.currency-filter-list-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.currency-sm-radio-area {
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.currency-sm-radio-area::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.curr-filter-sm-label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  background-color: transparent;
+  height: 30px;
+  align-content: center;
+}
+
+.inner-curr-radio:checked + .curr-filter-sm-label {
+  background-color: #7c59ff;
+  color: white;
+}
+
+.inner-curr-radio:disabled + .curr-filter-sm-label {
+  cursor: not-allowed;
+  background-color: gray;
+  color: white;
+}
+
+.filter-btns-left-list-item .select2.select2-container {
+  width: 90px !important;
+}
+.filter-btns-left-list-item
+  .select2-container--default
+  .select2-selection--single {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+.filter-btns-left-list-item
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder,
+.select2-results__option.select2-results__option--selectable {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: var(--primary-text-color);
+}
+/* filter css end */
+
+.form-select.pro-filter-select,
+.com-country-select {
+  --bs-form-select-bg-img: url("../images/arrow-down.png");
+  background-size: unset;
+}
+.form-select.pro-filter-select:focus,
+.com-country-select:focus {
+  border-color: #e0e0e0;
+  outline: 0;
+  box-shadow: none;
+}

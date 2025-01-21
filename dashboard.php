@@ -24,7 +24,7 @@
                                             </span>
                                         </div>
                                         <div class="">
-                                            <a href="#" class="primary-cta">
+                                            <a href="#" class="primary-cta w-auto">
                                                 View all
                                             </a>
                                         </div>

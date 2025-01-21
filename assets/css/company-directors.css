@@ -4,14 +4,6 @@
   z-index: 1;
 }
 
-.section-title-area .breadcrumb-item a,
-.section-title-area .breadcrumb-item {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 12px;
-  color: #7c59ff;
-}
 .company-directors-search-area {
   max-width: 100% !important;
   margin-bottom: 30px;

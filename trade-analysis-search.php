@@ -1,6 +1,7 @@
 <?php include "./includes/header.php"; ?>
 <link rel="stylesheet" href="./assets/css/trade-analysis.css">
 
+
 <main class="main">
     <section class="trade-analysis-section">
         <div class="container">
@@ -8,6 +9,12 @@
                 <div class="col-12 col-lg-12 col-xl-10">
                     <div class="section-title-area">
                         <h1 class="section-title m-0">Explore World Trades</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Trade Analysis</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
 
@@ -90,7 +97,7 @@
                                             <li class="currency-filter-list-item">
                                                 <div class="currency-radio-area">
                                                     <label for="INR" class="column-filter-label-text currency-radio-label">
-                                                        <input type="radio" class="currency-radio" name="currency_radio" value="INR"  id="INR">
+                                                        <input type="radio" class="currency-radio" name="currency_radio" value="INR" id="INR">
                                                         INR
                                                     </label>
                                                 </div>
@@ -130,10 +137,19 @@
                                         </ul>
                                     </li>
                                     <li class="filter-btns-left-list-item">
-                                        <button class="filter-btn-2 sm-btn bg-white" type="button">
-                                            Report of
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </button>
+                                        <select class="js-example-disabled-results">
+                                            <option></option>
+                                            <option value="one">One</option>
+                                            <option value="two">Two</option>
+                                            <option value="three">Three</option>
+                                            <option value="three">Four</option>
+                                            <option value="three">Five</option>
+                                            <option value="three">Six</option>
+                                            <option value="three">Seven</option>
+                                            <option value="three">Eight</option>
+                                            <option value="three">Nine</option>
+                                            <option value="three">Ten</option>
+                                        </select>
                                     </li>
                                     <li class="filter-btns-left-list-item">
                                         <button class="filter-btn-2 sm-btn bg-white" type="button">
@@ -1372,6 +1388,12 @@
 
 
 <script>
+    var $disabledResults = $(".js-example-disabled-results");
+    $disabledResults.select2({
+        placeholder: 'Report of',
+        allowClear: false
+    });
+
     new DataTable('#shipment-detail-table', {
         pageLength: 12,
         layout: {

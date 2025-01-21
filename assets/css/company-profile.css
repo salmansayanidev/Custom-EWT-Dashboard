@@ -1,0 +1,122 @@
+.company-profile-section {
+  padding: 50px 0;
+}
+.w-100px {
+  width: 100px;
+}
+.company-profile-filter-innner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.com-country-select {
+  padding: 6px 10px 6px 30px;
+}
+.flag-icon-img {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+}
+.company-detail-box {
+  padding: 26px 20px 15px;
+  background-color: white;
+  border-radius: 15px 15px;
+  border-bottom: 4px solid var(--border-bottom-color);
+}
+.comp-name-tag {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: #7c59ff;
+}
+.comp-lg-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 38px;
+  color: var(--primary-text-color);
+  margin-top: 5px;
+}
+.company-detail-box-left {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+  flex-grow: 1;
+}
+.company-detail-box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.company-detail-box-right {
+  flex-shrink: 0;
+}
+.company-profile-tabs-btn-list {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 43px;
+  flex-wrap: wrap;
+}
+.comp-pro-tab-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: var(--primary-text-color);
+  background-color: transparent;
+  border: none;
+}
+.comp-pro-tab-btn.active {
+  font-weight: 700;
+  color: #7c59ff;
+}
+.company-profile-tabs-btn-list-item {
+  position: relative;
+}
+.company-profile-tabs-btn-list-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -21px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background-color: var(--primary-text-color);
+}
+.company-profile-tabs-btn-list-item:first-child::before {
+  content: unset;
+}
+.company-profile {
+  display: none;
+}
+.company-profile.active {
+  display: block;
+}
+.com-box-sm-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: var(--primary-text-color);
+  margin-bottom: 5px;
+}
+.para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: var(--primary-text-color);
+}
+.highcharts-credits {
+    display: none;
+}
+.highcharts-exporting-group {
+    display: none;
+}
