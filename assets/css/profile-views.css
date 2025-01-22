@@ -28,56 +28,22 @@
   gap: 10px;
 }
 
-.company-directors-table-area {
+.profile-views-table-area {
   margin: 30px 0;
 }
 
-.pro-table thead tr th {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 12px;
-  color: var(--primary-text-color);
-  padding: 5px 10px !important;
-  height: 35px !important;
-  background-color: #eef0fc;
-  border-right: 1px solid #e0e0e0;
-  text-align: start !important;
-  border-bottom: none !important;
-  align-content: center;
-}
-.pro-table thead tr th:last-child {
-  border-right: none;
-}
+
 div.dt-container div.dt-layout-row {
   margin: 0 !important;
 }
-.dt-layout-row.dt-layout-table {
-  overflow: hidden;
-  border-bottom: 4px solid #7c59ff;
-  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.05));
-  border-radius: 15px;
-}
+
 div.dt-container.dt-empty-footer tbody > tr:last-child > * {
   border-bottom: none !important;
 }
 #profile-views-table_wrapper .dt-paging {
   margin-top: 10px;
 }
-.pro-table tbody tr td {
-  height: 44px;
-  align-content: center;
-  background-color: white;
-  text-align: start !important;
-  border-right: 1px solid #e0e0e0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 12px;
-  color: var(--primary-text-color);
-  border-bottom: none;
-  border-top: 1px solid #e0e0e0 !important;
-}
+
 .pro-table tbody tr td:first-child,
 .pro-table tbody tr td:last-child,
 .pro-table tbody tr td:nth-child(6) {

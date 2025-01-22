@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 col-xl-10">
-                    <div class="company-directors-table-area position-relative">
+                    <div class="profile-views-table-area position-relative">
                         <table class="datatables-ajax table-responsive table-stripe table pro-table" id="profile-views-table">
                             <thead>
                                 <tr>

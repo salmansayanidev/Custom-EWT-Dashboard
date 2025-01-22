@@ -61,287 +61,289 @@
                 <div class="col-12 col-lg-12 col-xl-10">
                     <div class="company-directors-table-area position-relative">
                         <img class="table-bg-absolute-img" src="./assets/images/table-bg-img.png" alt="">
-                        <table class="datatables-ajax table-responsive table-stripe table company-directors-table" id="comp-director-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Company</th>
-                                    <th>N/A</th>
-                                    <th>Transactions</th>
-                                    <th>Address</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                        <div class="company-directors-table-main d-none" >
+                            <table class="datatables-ajax table-responsive table-stripe table company-directors-table" id="comp-director-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Company</th>
+                                        <th>N/A</th>
+                                        <th>Transactions</th>
+                                        <th>Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" checked name="table_checkbox" id="checkbox-1">
-                                        <label for="checkbox-1" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABCO YECHNICAL PVT LTD</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 1</span>
-                                        <span class="d-block">Imports: 3,919</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-2">
-                                        <label for="checkbox-2" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC TAG COMPANY</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 396</span>
-                                        <span class="d-block">Imports: 782</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-3">
-                                        <label for="checkbox-3" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC INTERNATIONAL LOGISTICS SMC-PRIVATE LIMITED</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 28</span>
-                                        <span class="d-block">Imports: 528</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-4">
-                                        <label for="checkbox-4" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC TRADERS</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Imports: 193</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-5">
-                                        <label for="checkbox-5" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC COMMUNICATION NETWORK PRIVATE LIMITED</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Imports: 175</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-6">
-                                        <label for="checkbox-6" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC FISHING CORPORATION</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 106</span>
-                                        <span class="d-block">Imports: 1</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-7">
-                                        <label for="checkbox-7" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC HYGIENE INDUSTRIES PRIVATE LIMITED</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 22</span>
-                                        <span class="d-block">Imports: 64</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-8">
-                                        <label for="checkbox-8" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABCO INTERNATIONAL CORPORATION</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 3</span>
-                                        <span class="d-block">Imports: 82</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-9">
-                                        <label for="checkbox-9" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC GROUP</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Imports: 67</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-10">
-                                        <label for="checkbox-10" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC BRANDZ</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 60</span>
-                                        <span class="d-block">Imports: 6</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-11">
-                                        <label for="checkbox-11" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC TECHNOLOGIES</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Imports: 42</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-12">
-                                        <label for="checkbox-12" class="table-checkbox-square">
-                                            <i class="fa-solid fa-check"></i>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <h5 class="comp-name">ABC RAGS</h5>
-                                    </td>
-                                    <td>
-                                        <div class="table-na-area">
-                                            <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
-                                            <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-block">Exports: 34</span>
-                                    </td>
-                                    <td>PAKISTAN</td>
-                                </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" checked name="table_checkbox" id="checkbox-1">
+                                            <label for="checkbox-1" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABCO YECHNICAL PVT LTD</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 1</span>
+                                            <span class="d-block">Imports: 3,919</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-2">
+                                            <label for="checkbox-2" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC TAG COMPANY</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 396</span>
+                                            <span class="d-block">Imports: 782</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-3">
+                                            <label for="checkbox-3" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC INTERNATIONAL LOGISTICS SMC-PRIVATE LIMITED</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 28</span>
+                                            <span class="d-block">Imports: 528</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-4">
+                                            <label for="checkbox-4" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC TRADERS</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Imports: 193</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-5">
+                                            <label for="checkbox-5" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC COMMUNICATION NETWORK PRIVATE LIMITED</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Imports: 175</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-6">
+                                            <label for="checkbox-6" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC FISHING CORPORATION</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 106</span>
+                                            <span class="d-block">Imports: 1</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-7">
+                                            <label for="checkbox-7" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC HYGIENE INDUSTRIES PRIVATE LIMITED</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 22</span>
+                                            <span class="d-block">Imports: 64</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-8">
+                                            <label for="checkbox-8" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABCO INTERNATIONAL CORPORATION</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 3</span>
+                                            <span class="d-block">Imports: 82</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-9">
+                                            <label for="checkbox-9" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC GROUP</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Imports: 67</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-10">
+                                            <label for="checkbox-10" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC BRANDZ</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 60</span>
+                                            <span class="d-block">Imports: 6</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-11">
+                                            <label for="checkbox-11" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC TECHNOLOGIES</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #FFC65A;">Buyers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Imports: 42</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="table-checkbox d-none" name="table_checkbox" id="checkbox-12">
+                                            <label for="checkbox-12" class="table-checkbox-square">
+                                                <i class="fa-solid fa-check"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <h5 class="comp-name">ABC RAGS</h5>
+                                        </td>
+                                        <td>
+                                            <div class="table-na-area">
+                                                <span class="table-tag" style="--bg-color: #BCD4FF;">Sellers</span>
+                                                <span class="table-tag" style="--bg-color: #9EF7CE;">Industry</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">Exports: 34</span>
+                                        </td>
+                                        <td>PAKISTAN</td>
+                                    </tr>
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

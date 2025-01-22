@@ -115,8 +115,142 @@
   color: var(--primary-text-color);
 }
 .highcharts-credits {
-    display: none;
+  display: none;
 }
 .highcharts-exporting-group {
-    display: none;
+  display: none;
 }
+.chart-btn-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.comp-pro-chart-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.digit-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: var(--primary-text-color);
+  padding: 6px 10px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+.progress-sm-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 20px;
+  text-align: right;
+  color: var(--primary-text-color);
+}
+.import-products-progress-area {
+  margin-bottom: 15px;
+}
+
+.progress.import-product-progress {
+  height: 45px;
+  border-radius: 15px;
+  justify-content: end;
+  background-color: #eef0fc;
+}
+
+.progress.import-product-progress .progress-bar {
+  border-radius: 15px;
+  background-color: #8775ff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.company-profile .result-box {
+  background-color: #eef0fc;
+}
+.company-profile .result-box {
+  background-color: #eef0fc;
+  padding: 20px 20px;
+}
+.company-profile .results-area {
+  margin-top: 21px;
+}
+.total-transactional-table .dt-column-order::before {
+  display: none !important;
+}
+div.dt-container.dt-empty-footer tbody > tr:last-child > * {
+  border-bottom: none !important;
+}
+.transactional-disc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.export-market-analysis-map {
+  height: 331px;
+  width: 100%;
+}
+.export-market-analysis-map .jvm-zoom-btn {
+  display: none;
+}
+.brder-right {
+  border-right: 2px solid #e0e0e0;
+}
+.selected-country-list {
+  max-height: 310px;
+  overflow: auto;
+}
+.selected-country-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.selected-country-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Handle */
+.selected-country-list::-webkit-scrollbar-thumb {
+  background: #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.selected-country-list::-webkit-scrollbar-thumb:hover {
+  background: #cacaca;
+}
+.w-82px {
+  width: 82px;
+}
+.w-75px {
+  width: 75px;
+}
+.w-100px {
+  width: 100px;
+}
+.nexus-filter-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.nexus-box-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
