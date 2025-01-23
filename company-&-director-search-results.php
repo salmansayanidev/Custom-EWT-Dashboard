@@ -35,15 +35,22 @@
                             <div class="">
                                 <!-- <input type="text" class="search-field" placeholder="Please enter 3 more characters"> -->
                                 <div class="tags-input-container search-field tags-input" id="">
-                                    <input type="text" id="" class="tag-input" placeholder="Please enter 3 more characters" />
+                                    <input type="text" id="company-directors-search" class="tag-input" placeholder="Please enter 3 more characters" />
                                 </div>
                             </div>
                             <div class="position-relative country-select-area">
-                                <select class="form-select country-select" aria-label="Default select example">
-                                    <option selected disabled>Select a country</option>
-                                    <option value="1">Pakistan</option>
-                                    <option value="2">India</option>
-                                    <option value="2">Austrailia</option>
+                                <select class="js-example-disabled-results">
+                                    <option></option>
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                    <option value="three">Four</option>
+                                    <option value="three">Five</option>
+                                    <option value="three">Six</option>
+                                    <option value="three">Seven</option>
+                                    <option value="three">Eight</option>
+                                    <option value="three">Nine</option>
+                                    <option value="three">Ten</option>
                                 </select>
                                 <span class="select-arrow-down">
                                     <i class="fa-solid fa-angle-down"></i>
@@ -61,7 +68,7 @@
                 <div class="col-12 col-lg-12 col-xl-10">
                     <div class="company-directors-table-area position-relative">
                         <img class="table-bg-absolute-img" src="./assets/images/table-bg-img.png" alt="">
-                        <div class="company-directors-table-main d-none" >
+                        <div class="company-directors-table-main d-none">
                             <table class="datatables-ajax table-responsive table-stripe table company-directors-table" id="comp-director-table">
                                 <thead>
                                     <tr>
@@ -352,8 +359,15 @@
 </main>
 
 <?php include "./includes/footer.php" ?>
+<script src="./assets/js/company-directors.js"></script>
 
 <script>
+    var $disabledResults = $(".js-example-disabled-results");
+    $disabledResults.select2({
+        placeholder: 'Select a country',
+        allowClear: false
+    });
+
     new DataTable('#comp-director-table', {
         pageLength: 12,
         layout: {

@@ -30,9 +30,9 @@
                                             <option value="2">Sellers</option>
                                         </select>
                                     </li>
-                                    <li class="">
-                                        <select class="form-select pro-filter-select w-101px bg-white" aria-label="Default select example">
-                                            <option selected disabled>Select country</option>
+                                    <li class="pro-views-country-select-area">
+                                        <select class="pro-views-country-select">
+                                            <option></option>
                                             <option value="1">country 1</option>
                                             <option value="2">country 2</option>
                                             <option value="3">country 3</option>
@@ -349,6 +349,12 @@
 
 
 <script>
+    var $disabledResults = $(".pro-views-country-select");
+    $disabledResults.select2({
+        placeholder: 'Select country',
+        allowClear: false
+    });
+
     new DataTable('#profile-views-table', {
         pageLength: 12,
         layout: {

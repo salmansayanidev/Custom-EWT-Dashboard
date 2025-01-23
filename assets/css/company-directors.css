@@ -124,3 +124,28 @@ div.dt-container.dt-empty-footer tbody > tr:last-child > * {
   min-height: 442px;
   height: auto;
 }
+
+
+.country-select-area {
+  width: 250px;
+}
+.country-select-area .select2.select2-container {
+  width: 100% !important;  
+}
+.country-select-area .select2-selection {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  height: auto;
+}
+.country-select-area .select2-selection .select2-selection__rendered {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: var(--primary-text-color);
+  padding: 15px 10px 15px 20px;
+}
+.country-select-area .select2-selection__arrow {
+  display: none;
+}

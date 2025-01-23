@@ -18,350 +18,352 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-12 col-xl-10">
-                    <div class="home-search-main-area">
-                        <form action="">
-                            <div class="home-search-left">
-                                <div class="">
-                                    <input type="radio" class="d-none search-radio" name="import_export_radio" value="Imports" checked id="Imports">
-                                    <label for="Imports" class="primary-btn">
-                                        Imports
-                                    </label>
-                                </div>
-                                <div class="">
-                                    <input type="radio" class="d-none search-radio" name="import_export_radio" value="Exports" id="Exports">
-                                    <label for="Exports" class="primary-btn btn-2">
-                                        Exports
-                                    </label>
-                                </div>
-                                <div class="">
-                                    <div class="tags-input-container search-field tags-input" id="">
-                                        <input type="text" id="" class="tag-input" placeholder="Please add 1 or more hs code or product" />
+                <form action="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-12 col-xl-10">
+                            <div class="home-search-main-area">
+                                <div class="home-search-left">
+                                    <div class="">
+                                        <input type="radio" class="d-none search-radio" name="import_export_radio" value="Imports" checked id="Imports">
+                                        <label for="Imports" class="primary-btn">
+                                            Imports
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input type="radio" class="d-none search-radio" name="import_export_radio" value="Exports" id="Exports">
+                                        <label for="Exports" class="primary-btn btn-2">
+                                            Exports
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <div class="tags-input-container search-field tags-input" id="">
+                                            <input type="text" id="trade-analysis-search" class="tag-input" placeholder="Please add 1 or more hs code or product" />
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button class="search-btn" type="submit">
+                                            <img class="img-fluid" src="./assets/images/search-icon.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <button class="search-btn" type="submit">
-                                        <img class="img-fluid" src="./assets/images/search-icon.png" alt="">
-                                    </button>
+                                <div class="home-search-right">
+                                    <a href="#" class="primary-cta">
+                                        Advanced Search
+                                    </a>
                                 </div>
                             </div>
-                        </form>
-                        <div class="home-search-right">
-                            <a href="#" class="primary-cta">
-                                Advanced Search
-                            </a>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-lg-12 col-xl-10">
-                    <div class="filter-result-text-area position-relative">
-                        <p class="filter-result-text">Buyers Country: india, vietnam</p>
-                        <button class="filter-result-remove-btn" type="button">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                </div>
+                        <div class="col-12 col-lg-12 col-xl-10">
+                            <div class="filter-result-text-area position-relative">
+                                <p class="filter-result-text">Buyers Country: india, vietnam</p>
+                                <button class="filter-result-remove-btn" type="button">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
 
-                <div class="col-12 col-lg-12 col-xl-10">
-                    <div class="trade-analysis-filter-area">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-5">
-                                <ul class="filter-btns-left-list">
-                                    <li class="filter-btns-left-list-item position-relative">
-                                        <button class="filter-btn-2 sm-btn bg-white curr-filter-btn" type="button">
-                                            Currency (USD)
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </button>
-                                        <ul class="currency-filter-list">
-                                            <li class="currency-filter-list-item">
-                                                <div class="currency-radio-area">
-                                                    <label for="USD" class="column-filter-label-text currency-radio-label">
-                                                        <input type="radio" class="currency-radio" name="currency_radio" value="USD" checked id="USD">
-                                                        USD
-                                                    </label>
-                                                </div>
-                                                <div class="currency-inner-radio-area">
-                                                    <div class="currency-sm-radio-area">
-                                                        <input type="radio" class="d-none inner-curr-radio" name="USD_currencey_radio" checked value="" id="USD-full">
-                                                        <label class="curr-filter-sm-label" for="USD-full">
-                                                            Full
-                                                        </label>
-                                                        <input type="radio" class="d-none inner-curr-radio" name="USD_currencey_radio" value="" id="USD-mil-bil">
-                                                        <label class="curr-filter-sm-label" for="USD-mil-bil">
-                                                            Mil & Bil
-                                                        </label>
-                                                    </div>
-                                                </div>
+                        <div class="col-12 col-lg-12 col-xl-10">
+                            <div class="trade-analysis-filter-area">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-5">
+                                        <ul class="filter-btns-left-list">
+                                            <li class="filter-btns-left-list-item position-relative">
+                                                <button class="filter-btn-2 sm-btn bg-white curr-filter-btn" type="button">
+                                                    Currency (USD)
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </button>
+                                                <ul class="currency-filter-list">
+                                                    <li class="currency-filter-list-item">
+                                                        <div class="currency-radio-area">
+                                                            <label for="USD" class="column-filter-label-text currency-radio-label">
+                                                                <input type="radio" class="currency-radio" name="currency_radio" value="USD" checked id="USD">
+                                                                USD
+                                                            </label>
+                                                        </div>
+                                                        <div class="currency-inner-radio-area">
+                                                            <div class="currency-sm-radio-area">
+                                                                <input type="radio" class="d-none inner-curr-radio" name="USD_currencey_radio" checked value="" id="USD-full">
+                                                                <label class="curr-filter-sm-label" for="USD-full">
+                                                                    Full
+                                                                </label>
+                                                                <input type="radio" class="d-none inner-curr-radio" name="USD_currencey_radio" value="" id="USD-mil-bil">
+                                                                <label class="curr-filter-sm-label" for="USD-mil-bil">
+                                                                    Mil & Bil
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="currency-filter-list-item">
+                                                        <div class="currency-radio-area">
+                                                            <label for="INR" class="column-filter-label-text currency-radio-label">
+                                                                <input type="radio" class="currency-radio" name="currency_radio" value="INR" id="INR">
+                                                                INR
+                                                            </label>
+                                                        </div>
+                                                        <div class="currency-inner-radio-area">
+                                                            <div class="currency-sm-radio-area">
+                                                                <input type="radio" class="d-none inner-curr-radio" disabled checked name="INR_currencey_radio" value="" id="INR-full">
+                                                                <label class="curr-filter-sm-label" for="INR-full">
+                                                                    Full
+                                                                </label>
+                                                                <input type="radio" class="d-none inner-curr-radio" disabled name="INR_currencey_radio" value="" id="INR-lac-cr">
+                                                                <label class="curr-filter-sm-label" for="INR-lac-cr">
+                                                                    Mil & Bil
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="currency-filter-list-item">
+                                                        <div class="currency-radio-area">
+                                                            <label for="AED" class="column-filter-label-text currency-radio-label">
+                                                                <input type="radio" class="currency-radio" name="currency_radio" value="AED" id="AED">
+                                                                AED
+                                                            </label>
+                                                        </div>
+                                                        <div class="currency-inner-radio-area">
+                                                            <div class="currency-sm-radio-area">
+                                                                <input type="radio" class="d-none inner-curr-radio" disabled checked name="AED_currencey_radio" value="" id="AED-full">
+                                                                <label class="curr-filter-sm-label" for="AED-full">
+                                                                    Full
+                                                                </label>
+                                                                <input type="radio" class="d-none inner-curr-radio" disabled name="AED_currencey_radio" value="" id="AED-mil-bil">
+                                                                <label class="curr-filter-sm-label" for="AED-mil-bil">
+                                                                    Mil & Bil
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li class="currency-filter-list-item">
-                                                <div class="currency-radio-area">
-                                                    <label for="INR" class="column-filter-label-text currency-radio-label">
-                                                        <input type="radio" class="currency-radio" name="currency_radio" value="INR" id="INR">
-                                                        INR
-                                                    </label>
-                                                </div>
-                                                <div class="currency-inner-radio-area">
-                                                    <div class="currency-sm-radio-area">
-                                                        <input type="radio" class="d-none inner-curr-radio" disabled checked name="INR_currencey_radio" value="" id="INR-full">
-                                                        <label class="curr-filter-sm-label" for="INR-full">
-                                                            Full
-                                                        </label>
-                                                        <input type="radio" class="d-none inner-curr-radio" disabled name="INR_currencey_radio" value="" id="INR-lac-cr">
-                                                        <label class="curr-filter-sm-label" for="INR-lac-cr">
-                                                            Mil & Bil
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                            <li class="filter-btns-left-list-item">
+                                                <select class="js-example-disabled-results">
+                                                    <option></option>
+                                                    <option value="one">One</option>
+                                                    <option value="two">Two</option>
+                                                    <option value="three">Three</option>
+                                                    <option value="three">Four</option>
+                                                    <option value="three">Five</option>
+                                                    <option value="three">Six</option>
+                                                    <option value="three">Seven</option>
+                                                    <option value="three">Eight</option>
+                                                    <option value="three">Nine</option>
+                                                    <option value="three">Ten</option>
+                                                </select>
                                             </li>
-                                            <li class="currency-filter-list-item">
-                                                <div class="currency-radio-area">
-                                                    <label for="AED" class="column-filter-label-text currency-radio-label">
-                                                        <input type="radio" class="currency-radio" name="currency_radio" value="AED" id="AED">
-                                                        AED
-                                                    </label>
-                                                </div>
-                                                <div class="currency-inner-radio-area">
-                                                    <div class="currency-sm-radio-area">
-                                                        <input type="radio" class="d-none inner-curr-radio" disabled checked name="AED_currencey_radio" value="" id="AED-full">
-                                                        <label class="curr-filter-sm-label" for="AED-full">
-                                                            Full
+                                            <li class="filter-btns-left-list-item">
+                                                <button class="filter-btn-2 sm-btn bg-white" type="button">
+                                                    Hide indirect shipments
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-7">
+                                        <ul class="filter-btns-right-list">
+                                            <li class="filter-btns-right-list-item">
+                                                <button class="filter-btn" id="picker" type="button">
+                                                    <img class="img-fluid" src="./assets/images/filter-icon-1.png" alt="">
+                                                    Date/Year
+                                                </button>
+                                            </li>
+                                            <li class="filter-btns-right-list-item">
+                                                <a class="filter-btn" href="#">
+                                                    <img class="img-fluid" src="./assets/images/filter-icon-2.png" alt="">
+                                                    Download
+                                                </a>
+                                            </li>
+                                            <li class="filter-btns-right-list-item">
+                                                <a class="filter-btn" href="#">
+                                                    <img class="img-fluid" src="./assets/images/filter-icon-3.png" alt="">
+                                                    Save this search
+                                                </a>
+                                            </li>
+                                            <li class="filter-btns-right-list-item">
+                                                <a class="filter-btn" href="#">
+                                                    <img class="img-fluid" src="./assets/images/filter-icon-4.png" alt="">
+                                                    Saved list
+                                                </a>
+                                            </li>
+                                            <li class="filter-btns-right-list-item position-relative">
+                                                <button class="filter-btn" id="column-filter-btn" type="button">
+                                                    <img class="img-fluid" src="./assets/images/filter-icon-5.png" alt="">
+                                                    Filter
+                                                </button>
+                                                <ul class="column-filter-list">
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="0" checked name="column_filter_table" id="checkbox-1">
+                                                        <label for="checkbox-1" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Date
+                                                            </span>
                                                         </label>
-                                                        <input type="radio" class="d-none inner-curr-radio" disabled name="AED_currencey_radio" value="" id="AED-mil-bil">
-                                                        <label class="curr-filter-sm-label" for="AED-mil-bil">
-                                                            Mil & Bil
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="1" checked name="column_filter_table" id="checkbox-2">
+                                                        <label for="checkbox-2" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Shipment Id
+                                                            </span>
                                                         </label>
-                                                    </div>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="2" checked name="column_filter_table" id="checkbox-3">
+                                                        <label for="checkbox-3" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                HS Code
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="3" checked name="column_filter_table" id="checkbox-4">
+                                                        <label for="checkbox-4" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Industry
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="4" checked name="column_filter_table" id="checkbox-5">
+                                                        <label for="checkbox-5" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Product Description
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="5" checked name="column_filter_table" id="checkbox-6">
+                                                        <label for="checkbox-6" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Buyers Country
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="6" checked name="column_filter_table" id="checkbox-7">
+                                                        <label for="checkbox-7" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Buyers
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="7" checked name="column_filter_table" id="checkbox-8">
+                                                        <label for="checkbox-8" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Destination Port
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="8" checked name="column_filter_table" id="checkbox-9">
+                                                        <label for="checkbox-9" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Sellers Country
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="9" checked name="column_filter_table" id="checkbox-10">
+                                                        <label for="checkbox-10" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Sellers
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="10" checked name="column_filter_table" id="checkbox-11">
+                                                        <label for="checkbox-11" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Origin Port
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="11" checked name="column_filter_table" id="checkbox-12">
+                                                        <label for="checkbox-12" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Unit
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="12" checked name="column_filter_table" id="checkbox-13">
+                                                        <label for="checkbox-13" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Quantity
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="column-filter-list-item">
+                                                        <input type="checkbox" class="column-filter-checkbox" data-dt-column="13" checked name="column_filter_table" id="checkbox-14">
+                                                        <label for="checkbox-14" class="column-filter-label">
+                                                            <span class="column-filter-checkbox-square">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                            <span class="column-filter-label-text">
+                                                                Value (US)
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="filter-btns-right-list-item">
+                                                <div class="font-size-filter-area">
+                                                    <button class="plus-minus-btn" id="table-font-minus" type="button">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </button>
+                                                    <img class="plus-minus-btn" src="./assets/images/filter-icon-6.png" alt="">
+                                                    <button class="plus-minus-btn" id="table-font-plus" type="button">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
                                                 </div>
                                             </li>
                                         </ul>
-                                    </li>
-                                    <li class="filter-btns-left-list-item">
-                                        <select class="js-example-disabled-results">
-                                            <option></option>
-                                            <option value="one">One</option>
-                                            <option value="two">Two</option>
-                                            <option value="three">Three</option>
-                                            <option value="three">Four</option>
-                                            <option value="three">Five</option>
-                                            <option value="three">Six</option>
-                                            <option value="three">Seven</option>
-                                            <option value="three">Eight</option>
-                                            <option value="three">Nine</option>
-                                            <option value="three">Ten</option>
-                                        </select>
-                                    </li>
-                                    <li class="filter-btns-left-list-item">
-                                        <button class="filter-btn-2 sm-btn bg-white" type="button">
-                                            Hide indirect shipments
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-7">
-                                <ul class="filter-btns-right-list">
-                                    <li class="filter-btns-right-list-item">
-                                        <button class="filter-btn" id="picker" type="button">
-                                            <img class="img-fluid" src="./assets/images/filter-icon-1.png" alt="">
-                                            Date/Year
-                                        </button>
-                                    </li>
-                                    <li class="filter-btns-right-list-item">
-                                        <a class="filter-btn" href="#">
-                                            <img class="img-fluid" src="./assets/images/filter-icon-2.png" alt="">
-                                            Download
-                                        </a>
-                                    </li>
-                                    <li class="filter-btns-right-list-item">
-                                        <a class="filter-btn" href="#">
-                                            <img class="img-fluid" src="./assets/images/filter-icon-3.png" alt="">
-                                            Save this search
-                                        </a>
-                                    </li>
-                                    <li class="filter-btns-right-list-item">
-                                        <a class="filter-btn" href="#">
-                                            <img class="img-fluid" src="./assets/images/filter-icon-4.png" alt="">
-                                            Saved list
-                                        </a>
-                                    </li>
-                                    <li class="filter-btns-right-list-item position-relative">
-                                        <button class="filter-btn" id="column-filter-btn" type="button">
-                                            <img class="img-fluid" src="./assets/images/filter-icon-5.png" alt="">
-                                            Filter
-                                        </button>
-                                        <ul class="column-filter-list">
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="0" checked name="column_filter_table" id="checkbox-1">
-                                                <label for="checkbox-1" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Date
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="1" checked name="column_filter_table" id="checkbox-2">
-                                                <label for="checkbox-2" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Shipment Id
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="2" checked name="column_filter_table" id="checkbox-3">
-                                                <label for="checkbox-3" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        HS Code
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="3" checked name="column_filter_table" id="checkbox-4">
-                                                <label for="checkbox-4" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Industry
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="4" checked name="column_filter_table" id="checkbox-5">
-                                                <label for="checkbox-5" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Product Description
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="5" checked name="column_filter_table" id="checkbox-6">
-                                                <label for="checkbox-6" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Buyers Country
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="6" checked name="column_filter_table" id="checkbox-7">
-                                                <label for="checkbox-7" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Buyers
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="7" checked name="column_filter_table" id="checkbox-8">
-                                                <label for="checkbox-8" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Destination Port
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="8" checked name="column_filter_table" id="checkbox-9">
-                                                <label for="checkbox-9" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Sellers Country
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="9" checked name="column_filter_table" id="checkbox-10">
-                                                <label for="checkbox-10" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Sellers
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="10" checked name="column_filter_table" id="checkbox-11">
-                                                <label for="checkbox-11" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Origin Port
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="11" checked name="column_filter_table" id="checkbox-12">
-                                                <label for="checkbox-12" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Unit
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="12" checked name="column_filter_table" id="checkbox-13">
-                                                <label for="checkbox-13" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Quantity
-                                                    </span>
-                                                </label>
-                                            </li>
-                                            <li class="column-filter-list-item">
-                                                <input type="checkbox" class="column-filter-checkbox" data-dt-column="13" checked name="column_filter_table" id="checkbox-14">
-                                                <label for="checkbox-14" class="column-filter-label">
-                                                    <span class="column-filter-checkbox-square">
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </span>
-                                                    <span class="column-filter-label-text">
-                                                        Value (US)
-                                                    </span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="filter-btns-right-list-item">
-                                        <div class="font-size-filter-area">
-                                            <button class="plus-minus-btn" id="table-font-minus" type="button">
-                                                <i class="fa-solid fa-minus"></i>
-                                            </button>
-                                            <img class="plus-minus-btn" src="./assets/images/filter-icon-6.png" alt="">
-                                            <button class="plus-minus-btn" id="table-font-plus" type="button">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="container-fluid px-4">

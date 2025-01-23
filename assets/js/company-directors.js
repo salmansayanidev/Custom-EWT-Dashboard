@@ -1,6 +1,6 @@
 // search input js
 
-const tagInput = document.getElementById("home-search-input");
+const tagInput = document.getElementById("company-directors-search");
 const tagsInput = document.querySelector(".tags-input-container");
 const maxTags = 6;
 let tagsSet = new Set();
@@ -21,7 +21,7 @@ const createTag = (label) => {
     tagsCount--;
     tagsArray = tagsArray.filter((tag) => tag !== label);
     if (tagsCount === 0) {
-      tagInput.placeholder = "Please add 1 or more hs code or product";
+      tagInput.placeholder = "Please enter 3 more characters";
     }
   });
 

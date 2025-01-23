@@ -21,10 +21,9 @@
                                         Sellers
                                     </label>
                                 </div>
-                                <div class="">  
-                                    <!-- <input type="text" class="search-field" placeholder="Please add 1 or more hs code or product"> -->
+                                <div class="">
                                     <div class="tags-input-container search-field tags-input" id="">
-                                        <input type="text" id="" class="tag-input" placeholder="Please add 1 or more hs code or product" />
+                                        <input type="text" id="home-search-input" class="tag-input" placeholder="Please add 1 or more hs code or product" />
                                     </div>
                                 </div>
                                 <div class="">
@@ -85,36 +84,39 @@
 </main>
 
 <?php include './includes/footer.php' ?>
+<script src="./assets/js/index.js"></script>
 
-<!-- <script>
-    const map = new jsVectorMap({
-        selector: "#home-map",
-        map: "world",
-        selectedRegions: ["RU", "CN", "IN", "CA", "BR", "DZ", "AU"],
-        regionStyle: {
-            initial: {
-            fill: "#CACACA", 
-            },
-            selected: {
-            fill: "#989898", 
-            }
-        },
-        onRegionSelected: function (index, isSelected, selectedRegions) {
-            console.log("Selected regions:", selectedRegions);
-        },
-    });
-
-</script> -->
 
 <script>
     const buyersData = {
-        RU: { name: "Russia", buyers: 120 },
-        CN: { name: "China", buyers: 300 },
-        IN: { name: "India", buyers: 450 },
-        CA: { name: "Canada", buyers: 200 },
-        BR: { name: "Brazil", buyers: 150 },
-        DZ: { name: "Algeria", buyers: 80 },
-        AU: { name: "Australia", buyers: 100 },
+        RU: {
+            name: "Russia",
+            buyers: 120
+        },
+        CN: {
+            name: "China",
+            buyers: 300
+        },
+        IN: {
+            name: "India",
+            buyers: 450
+        },
+        CA: {
+            name: "Canada",
+            buyers: 200
+        },
+        BR: {
+            name: "Brazil",
+            buyers: 150
+        },
+        DZ: {
+            name: "Algeria",
+            buyers: 80
+        },
+        AU: {
+            name: "Australia",
+            buyers: 100
+        },
     };
 
     const data = buyersData;
@@ -125,7 +127,7 @@
         map: "world",
         onLoaded(map) {
             window.addEventListener("resize", () => {
-            map.updateSize();
+                map.updateSize();
             });
         },
         selectedRegions: selectedRegions,
@@ -143,7 +145,7 @@
             const countryData = data[normalizedCode];
             if (countryData) {
                 tooltip.text(
-                    `<h5 class="m-0 chart-coutry-name">${countryData.name}</h5>` + 
+                    `<h5 class="m-0 chart-coutry-name">${countryData.name}</h5>` +
                     `<span class="m-0 chart-coutry-buyers">${countryData.buyers}</span>`,
                     true // Enables HTML rendering
                 );
@@ -163,5 +165,4 @@
             }
         },
     });
-
 </script>
