@@ -192,7 +192,7 @@
                     </div>
                 </div>
 
-                <div class="company-profile active " data-content="About">
+                <div class="company-profile active" data-content="About">
                     <div class="row justify-content-center">
 
                         <div class="col-12 col-lg-12 col-xl-10">
@@ -615,7 +615,34 @@
                     </div>
                 </div>
 
-                <div class="company-profil" data-content="Nexus">
+                <div class="company-profile" data-content="Port-Analysis">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-12 col-xl-10">
+                            <div class="company-detail-box mb-10px" style="--border-bottom-color: #FFC65A;">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div id="port-analysis-pie-chart-1"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div id="port-analysis-pie-chart-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 col-xl-10">
+                            <div class="text-end d-flex justify-content-between mt-20px">
+                                <button type="button" class="primary-cta border-0" data-view="Analytics">
+                                    Analytics
+                                </button>
+                                <button type="button" class="primary-cta border-0" data-view="Nexus">
+                                    Nexus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-profile" data-content="Nexus">
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-12 col-xl-10">
                             <div class="company-detail-box mb-10px" style="--border-bottom-color: #FFC65A;">
@@ -794,10 +821,11 @@
     }
 
     // main-import-products-analysis chart js
-    const chart2 = new Highcharts.Chart({
+
+    const chart2 = Highcharts.chart({
         chart: {
-            renderTo: 'main-import-products-analysis',
             type: 'column',
+            renderTo: 'main-import-products-analysis',
             options3d: {
                 enabled: true,
                 alpha: 15,
@@ -806,8 +834,11 @@
                 viewDistance: 25
             }
         },
+        title: {
+            text: ''
+        },
         xAxis: {
-            type: 'category',
+            categories: ['October <br> 2023', 'November <br> 2023', 'December <br> 2023', 'January <br> 2024', 'February <br> 2024', 'March <br> 2024', 'April <br> 2024', 'May <br> 2024', 'June <br> 2024', 'July <br> 2024', 'August <br> 2024', 'September <br> 2024'],
             labels: {
                 style: {
                     fontSize: '1rem',
@@ -820,6 +851,7 @@
             }
         },
         yAxis: {
+            min: 0,
             title: {
                 text: 'Value (USD)',
                 style: {
@@ -842,11 +874,12 @@
                     lineHeight: '12px'
                 }
             }
-        },
 
+        },
         tooltip: {
-            headerFormat: '<b>{point.key}</b><br>',
-            pointFormat: 'Cars sold: {point.y}',
+            pointFormat: '<span style="color:{series.color}">{series.name}</span>' +
+                ': <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+            shared: true,
             style: {
                 fontSize: '1rem',
                 fontFamily: 'Roboto',
@@ -854,35 +887,47 @@
                 color: '#343434',
                 lineHeight: '12px'
             }
-
-        },
-        title: {
-            text: ''
-        },
-        legend: {
-            enabled: false
         },
         plotOptions: {
             column: {
-                depth: 25
+                stacking: 'percent',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.percentage:.0f}%',
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        fontFamily: 'Roboto',
+                        fontSize: '10px',
+                        textOutline: 'none'
+                    }
+                }
             }
         },
+        legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal',
+            itemStyle: {
+                fontSize: '1.2rem',
+                fontFamily: 'Roboto',
+                fontWeight: 'bold',
+                color: '#343434'
+            },
+            itemDistance: 60,
+        },
         series: [{
-            data: [
-                ['October <br> 2023', 70],
-                ['November <br> 2023', 75],
-                ['December <br> 2023', 60],
-                ['January <br> 2024', 70],
-                ['February <br> 2024', 13],
-                ['March <br> 2024', 23],
-                ['April <br> 2024', 50],
-                ['May <br> 2024', 12],
-                ['June <br> 2024', 15],
-                ['July <br> 2024', 10],
-                ['August <br> 2024', 34],
-                ['September <br> 2024', 23],
-            ],
-            colorByPoint: true,
+            name: 'Road',
+            data: [434, 290, 307, 400, 350, 100, 200, 450, 700, 600, 50, 20]
+        }, {
+            name: 'Rail',
+            data: [272, 153, 156, 1000, 120, 230, 342, 433, 232, 543, 342, 423]
+        }, {
+            name: 'Air',
+            data: [13, 7, 8, 49, 234, 45, 234, 45, 234, 45, 234, 45]
+        }, {
+            name: 'Sea',
+            data: [55, 35, 41, 234, 45, 234, 650, 234, 45, 234, 65, 223]
         }]
     });
 
@@ -1468,4 +1513,119 @@
     function sankeyDiagramFullScreen() {
         sankeyDiagram.fullscreen.toggle();
     }
+
+    // port-analysis-pie-chart-1
+
+    Highcharts.chart('port-analysis-pie-chart-1', {
+        chart: {
+            styledMode: false
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size: 12px; font-weight: medium;">{point.key}</span><br>',
+            pointFormat: '<span style="font-size: 12px; color: #343434;">{series.name}: </span>' +
+                '<span style="font-size: 12px; color: #343434;">{point.y}%</span>',
+            backgroundColor: '#ffffff',
+            borderColor: '#000',
+            borderRadius: 5,
+            shadow: false
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontSize: '1.2rem',
+                        color: '#343434',
+                        fontWeight: 'semibold'
+                    }
+                }
+            }
+        },
+        legend: {
+            enabled: true,
+            itemStyle: {
+                fontSize: '1.2rem',
+                color: '#343434',
+                fontWeight: 'medium'
+            },
+            itemHoverStyle: {
+                color: '#007bff'
+            },
+            itemHiddenStyle: {
+                color: '#ccc'
+            }
+        },
+        series: [{
+            type: 'pie',
+            allowPointSelect: true,
+            keys: ['name', 'y', 'selected', 'sliced'],
+            data: [
+                ['Apple', 27.16, true],
+                ['Samsung', 23.72, false],
+                ['Xiaomi', 11.92, false],
+            ],
+            showInLegend: true
+        }]
+    });
+
+
+    // port-analysis-pie-chart-2
+
+    Highcharts.chart('port-analysis-pie-chart-2', {
+        chart: {
+            styledMode: false
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size: 12px; font-weight: medium;">{point.key}</span><br>',
+            pointFormat: '<span style="font-size: 12px; color: #343434;">{series.name}: </span>' +
+                '<span style="font-size: 12px; color: #343434;">{point.y}%</span>',
+            backgroundColor: '#ffffff',
+            borderColor: '#000',
+            borderRadius: 5,
+            shadow: false
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontSize: '1.2rem',
+                        color: '#343434',
+                        fontWeight: 'semibold'
+                    }
+                }
+            }
+        },
+        legend: {
+            enabled: true,
+            itemStyle: {
+                fontSize: '1.2rem',
+                color: '#343434',
+                fontWeight: 'medium'
+            },
+            itemHoverStyle: {
+                color: '#007bff'
+            },
+            itemHiddenStyle: {
+                color: '#ccc'
+            }
+        },
+        series: [{
+            type: 'pie',
+            allowPointSelect: true,
+            keys: ['name', 'y', 'selected', 'sliced'],
+            data: [
+                ['Apple', 27.16, true],
+                ['Samsung', 23.72, false],
+                ['Xiaomi', 11.92, false],
+            ],
+            showInLegend: true
+        }]
+    });
 </script>
