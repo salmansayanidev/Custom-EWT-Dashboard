@@ -33,9 +33,12 @@
                                 </label>
                             </div>
                             <div class="">
-                                <!-- <input type="text" class="search-field" placeholder="Please enter 3 more characters"> -->
                                 <div class="tags-input-container search-field tags-input" id="">
-                                    <input type="text" id="company-directors-search" class="tag-input" placeholder="Please enter 3 more characters" />
+                                    <input type="hidden" name="search" id="search_tags"
+                                        value="" />
+                                    <input type="text" id="home-search-input" class="tag-input"
+                                        placeholder="Please add 1 or more hs code or product" />
+
                                 </div>
                             </div>
                             <div class="position-relative country-select-area">

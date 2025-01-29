@@ -23,7 +23,11 @@
                                 </div>
                                 <div class="">
                                     <div class="tags-input-container search-field tags-input" id="">
-                                        <input type="text" id="home-search-input" class="tag-input" placeholder="Please add 1 or more hs code or product" />
+                                        <input type="hidden" name="search" id="search_tags"
+                                            value="" />
+                                        <input type="text" id="home-search-input" class="tag-input"
+                                            placeholder="Please add 1 or more hs code or product" />
+
                                     </div>
                                 </div>
                                 <div class="">
@@ -91,78 +95,84 @@
     const buyersData = {
         RU: {
             name: "Russia",
-            buyers: 120
+            buyers: 120,
+            url: "https://example.com/russia"
         },
         CN: {
             name: "China",
-            buyers: 300
+            buyers: 300,
+            url: "https://example.com/china"
         },
         IN: {
             name: "India",
-            buyers: 450
+            buyers: 450,
+            url: "https://example.com/india"
         },
         CA: {
             name: "Canada",
-            buyers: 200
+            buyers: 200,
+            url: "https://example.com/canada"
         },
         BR: {
             name: "Brazil",
-            buyers: 150
+            buyers: 150,
+            url: "https://example.com/brazil"
         },
         DZ: {
             name: "Algeria",
-            buyers: 80
+            buyers: 80,
+            url: "https://example.com/algeria"
         },
         AU: {
             name: "Australia",
-            buyers: 100
+            buyers: 100,
+            url: "https://example.com/australia"
         },
     };
 
-    const data = buyersData;
-    const selectedRegions = ["RU", "CN", "IN", "CA", "BR", "DZ", "AU"];
+    const selectedRegions = Object.keys(buyersData);
 
     const map = new jsVectorMap({
         selector: "#home-map",
         map: "world",
-        onLoaded(map) {
-            window.addEventListener("resize", () => {
-                map.updateSize();
-            });
-        },
         selectedRegions: selectedRegions,
         regionStyle: {
             initial: {
-                fill: "#CACACA",
+                fill: "#CACACA"
             },
             selected: {
-                fill: "#989898",
+                fill: "#989898"
             },
         },
         regionsSelectable: true,
         onRegionTooltipShow(event, tooltip, code) {
-            const normalizedCode = code.toUpperCase();
-            const countryData = data[normalizedCode];
+            const countryData = buyersData[code.toUpperCase()];
             if (countryData) {
                 tooltip.text(
                     `<h5 class="m-0 chart-coutry-name">${countryData.name}</h5>` +
-                    `<span class="m-0 chart-coutry-buyers">${countryData.buyers}</span>`,
+                    `<span class="m-0 chart-coutry-buyers">${countryData.buyers} Buyers</span>`,
                     true // Enables HTML rendering
                 );
+
                 tooltip.css({
                     "background-color": "#fff",
-                    "padding": "7px 14px 11px 15px ",
+                    "padding": "7px 14px 11px 15px",
                     "border-radius": "15px",
                     "width": "95px",
                     "color": "#343434",
-                    "font-weight": "medium",
+                    "font-weight": "500",
                     "font-size": "10px",
-                    "margin": "0",
                     "height": "auto",
-                    "width": "95px",
-                    "align-content": "center",
+                    "text-align": "center",
+                    "box-shadow": "0px 4px 6px rgba(0, 0, 0, 0.1)"
                 });
             }
         },
+        onRegionClick(event, code) {
+            const countryData = buyersData[code.toUpperCase()];
+            if (countryData && countryData.url) {
+                window.open(countryData.url, "_blank"); // Open link in new tab
+            }
+        }
     });
 </script>
