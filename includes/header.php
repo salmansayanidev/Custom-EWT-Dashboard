@@ -79,7 +79,7 @@
                                         </a>
                                     </li>
                                     <li class="sb-nav-list-item">
-                                        <a class="navigation-link fw-regular" href="#">
+                                        <a class="navigation-link fw-regular" href="port-analysis.php">
                                             Port Analysis
                                         </a>
                                     </li>
@@ -128,7 +128,7 @@
                                 </a>
                             </li>
                             <li class="profile-list-item">
-                                <a class="navigation-link fw-regular" href="#">
+                                <a class="navigation-link fw-regular" href="smart-box.php">
                                     Smart Box
                                 </a>
                             </li>

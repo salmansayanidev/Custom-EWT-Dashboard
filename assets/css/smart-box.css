@@ -1,0 +1,85 @@
+.smart-box-section {
+    padding: 50px 0;
+}
+
+.smart-box-main {
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.year-radio-label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.year-radio:checked+.year-radio-label {
+    background-color: #7c59ff;
+    color: white;
+}
+
+.year-radio-area {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+.year-text {
+    font-size: 1rem;
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.smart-box-area {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.smart-box-area-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.smart-box-btns-area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.smart-box-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+}
+
+.red-color {
+    color: red;
+}
+
+.results-area {
+    margin-top: 30px;
+}
+
+.smart-box-icon {
+    height: 50px;
+    width: 50px;
+    
+}

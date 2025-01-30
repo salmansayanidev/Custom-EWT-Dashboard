@@ -1,0 +1,179 @@
+.port-analysis-section {
+    padding: 50px 0;
+}
+
+.company-directors-search-area {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+}
+
+.country-select-area {
+    width: 200px;
+}
+
+.country-select-area .select2.select2-container {
+    width: 100% !important;
+}
+
+.country-select-area .select2-selection {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    height: auto;
+}
+
+.country-select-area .select2-selection .select2-selection__rendered {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 18px;
+    color: var(--primary-text-color);
+    padding: 15px 10px 15px 20px;
+}
+
+.country-select-area .select2-selection__arrow {
+    display: none;
+}
+
+.port-analysis-section .primary-btn {
+    width: 110px;
+}
+
+.search-field,
+.tags-input-wrapper {
+    width: 300px;
+    padding: 5px 10px 5px 20px;
+}
+
+.home-search-left {
+    gap: 5px;
+}
+
+.column-filter-label-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+.filter-btns-left-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.port-analysis-detail-main {
+    margin: 30px 0;
+    padding: 10px 10px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.port-analysis-detail-inner {
+    background: #f5f5f5;
+    border-radius: 15px;
+    padding: 20px 20px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.port-analysis-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    margin-bottom: 15px;
+}
+
+.top-importers-table-area {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.05));
+}
+
+.top-importers-table {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.top-importers-table tr th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 15px;
+    color: var(--primary-text-color);
+    height: 35px;
+    background: #eef0fc;
+    padding: 5px 10px;
+}
+
+.top-importers-table tbody {
+    max-height: 420px;
+    overflow-y: auto;
+    display: block;
+}
+
+.top-importers-table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.top-importers-table tr td {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 15px;
+    color: var(--primary-text-color);
+    height: 44px;
+    background-color: white;
+    padding: 5px 10px;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.top-importers-table tr td:last-child {
+    border-right: none;
+}
+
+.top-importers-table tbody::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+.top-importers-table tbody::-webkit-scrollbar-track {
+    border-radius: 10px !important;
+    background-color: #cacaca7e !important;
+}
+
+.top-importers-table tbody::-webkit-scrollbar-thumb {
+    background: #cacaca !important;
+    border-radius: 10px !important;
+}
+
+.top-importers-table tbody::-webkit-scrollbar-thumb:hover {
+    background: #cacaca !important;
+}
+
+.top-importers-table tbody tr:nth-child(even) td {
+    background-color: #F5F5F5;
+}
+
+#top-sourcing-destinations-map {
+    height: 100%;
+    width: 100%;
+}
+.jvm-zoom-btn {
+    display: none;
+}
+.port-analysis-section .select-arrow-down {
+    right: 10px;
+}
+.highcharts-no-tooltip, .highcharts-credits {
+    display: none;
+}
+#top-importers-bar-chart {
+    width: 100%;
+    height: 100%;
+}
+#top-importers-bar-chart .highcharts-background {
+    fill: transparent;
+}
+
