@@ -618,12 +618,17 @@
                 <div class="company-profile" data-content="Port-Analysis">
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-12 col-xl-10">
-                            <div class="company-detail-box mb-10px" style="--border-bottom-color: #FFC65A;">
+                            <div class="company-detail-box mb-10px position-relative" style="--border-bottom-color: #FFC65A;">
+                                <div class="arrow-area">
+                                    <img class="img-fluid" src="./assets/images/arrows.png" alt="">
+                                </div>
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
+                                        <h6 class="com-box-sm-title mb-3 text-center fw-bold">Heading One</h6>
                                         <div id="port-analysis-pie-chart-1"></div>
                                     </div>
                                     <div class="col-12 col-lg-6">
+                                        <h6 class="com-box-sm-title mb-3 text-center fw-bold">Heading Two</h6>
                                         <div id="port-analysis-pie-chart-2"></div>
                                     </div>
                                 </div>
