@@ -67,22 +67,22 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <div class="smart-box-area">
+                                <div class="smart-box-area active">
                                     <div class="smart-box-area-top">
                                         <h3 class="smart-box-title">HS Codes : cars</h3>
                                         <div class="smart-box-btns-area">
                                             <button class="smart-box-btn red-color" type="button">
                                                 <i class="fa-regular fa-trash-can"></i>
                                             </button>
-                                            <button class="smart-box-btn" type="button">
+                                            <button class="smart-box-btn dropdown-btn" type="button">
                                                 <i class="fa-solid fa-angle-down"></i>
                                             </button>
                                         </div>
                                     </div>
                                     <div class="results-area">
                                         <a href="#" class="result-box" style="--border-bottom-color: #FFC65A">
-                                            <div class="result-img-area">
-                                                <img class="img-fluid" src="./assets/images/result-icon-1.png" alt="">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
                                             </div>
                                             <div class="result-text-area">
                                                 <h5 class="result-count mb-2">Shipments</h5>
@@ -90,8 +90,8 @@
                                             </div>
                                         </a>
                                         <div class="result-box" style="--border-bottom-color: #BCD4FF">
-                                            <div class="result-img-area">
-                                                <img class="img-fluid" src="./assets/images/result-icon-2.png" alt="">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-regular fa-user"></i>
                                             </div>
                                             <div class="result-text-area">
                                                 <h5 class="result-count">Buyers</h5>
@@ -99,8 +99,92 @@
                                             </div>
                                         </div>
                                         <div class="result-box" style="--border-bottom-color: #9EF7CE">
-                                            <div class="result-img-area">
-                                                <img class="img-fluid" src="./assets/images/result-icon-3.png" alt="">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-shop"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count">Sellers</h5>
+                                                <span class="result-name">161,770</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smart-box-area">
+                                    <div class="smart-box-area-top">
+                                        <h3 class="smart-box-title">HS Codes : cars</h3>
+                                        <div class="smart-box-btns-area">
+                                            <button class="smart-box-btn red-color" type="button">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </button>
+                                            <button class="smart-box-btn dropdown-btn" type="button">
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="results-area">
+                                        <a href="#" class="result-box" style="--border-bottom-color: #FFC65A">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count mb-2">Shipments</h5>
+                                                <span class="result-name">18,419,263 </span>
+                                            </div>
+                                        </a>
+                                        <div class="result-box" style="--border-bottom-color: #BCD4FF">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-regular fa-user"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count">Buyers</h5>
+                                                <span class="result-name">181</span>
+                                            </div>
+                                        </div>
+                                        <div class="result-box" style="--border-bottom-color: #9EF7CE">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-shop"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count">Sellers</h5>
+                                                <span class="result-name">161,770</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smart-box-area">
+                                    <div class="smart-box-area-top">
+                                        <h3 class="smart-box-title">HS Codes : cars</h3>
+                                        <div class="smart-box-btns-area">
+                                            <button class="smart-box-btn red-color" type="button">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </button>
+                                            <button class="smart-box-btn dropdown-btn" type="button">
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="results-area">
+                                        <a href="#" class="result-box" style="--border-bottom-color: #FFC65A">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count mb-2">Shipments</h5>
+                                                <span class="result-name">18,419,263 </span>
+                                            </div>
+                                        </a>
+                                        <div class="result-box" style="--border-bottom-color: #BCD4FF">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-regular fa-user"></i>
+                                            </div>
+                                            <div class="result-text-area">
+                                                <h5 class="result-count">Buyers</h5>
+                                                <span class="result-name">181</span>
+                                            </div>
+                                        </div>
+                                        <div class="result-box" style="--border-bottom-color: #9EF7CE">
+                                            <div class="smart-box-icon">
+                                                <i class="fa-solid fa-shop"></i>
                                             </div>
                                             <div class="result-text-area">
                                                 <h5 class="result-count">Sellers</h5>
@@ -126,4 +210,24 @@
 <script>
     // filter date picker
     $('#picker').daterangepicker();
+
+
+    // faqs js
+
+    $(".results-area").hide();
+    $(".smart-box-area.active").find(".results-area").show();
+
+    $(".dropdown-btn").click(function() {
+        var $currentFaqBox = $(this).closest(".faq-box");
+
+        if (!$currentFaqBox.hasClass("active")) {
+            $(".faq-text-area").slideUp();
+            $(".faq-box").removeClass("active");
+            $currentFaqBox.addClass("active");
+            $currentFaqBox.find(".faq-text-area").slideDown();
+        } else {
+            $currentFaqBox.removeClass("active");
+            $currentFaqBox.find(".faq-text-area").slideUp();
+        }
+    });
 </script>
