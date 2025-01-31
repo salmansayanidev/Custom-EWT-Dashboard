@@ -6,6 +6,7 @@
     padding: 20px 20px;
     background-color: white;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 .year-radio-label {
@@ -98,4 +99,12 @@
 .result-box {
     align-items: start;
     padding: 15px 15px;
+}
+
+.dropdown-btn i {
+    transition: all 0.5s ease-in-out; 
+}
+
+.smart-box-area.active .dropdown-btn i {
+    transform: rotate(180deg);
 }
