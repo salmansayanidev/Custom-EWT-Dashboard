@@ -370,6 +370,74 @@
                 </form>
             </div>
         </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10 col-lg-12">
+                    <div class="buyers-results-cta-area">
+                        <a class="buyers-results-cta " href="#">
+                            Results
+                        </a>
+                        <a class="buyers-results-cta active" href="#">
+                            Buyers
+                        </a>
+                        <a class="buyers-results-cta " href="#">
+                            Unnamed
+                        </a>
+                    </div>
+                    <div class="buyers-results-chart-area position-relative">
+                        <ul class="buyers-results-chart-tabs-btn-list">
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn active" type="button" data-view="Trade Trend">
+                                    Trade Trend
+                                </button>
+                            </li>
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn " type="button" data-view="Country of Origin">
+                                    Country of Origin
+                                </button>
+                            </li>
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn " type="button" data-view="About">
+                                    Port of Loading
+                                </button>
+                            </li>
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn " type="button" data-view="About">
+                                    Port of Discharge
+                                </button>
+                            </li>
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn " type="button" data-view="About">
+                                    HS Code
+                                </button>
+                            </li>
+                            <li class="buyers-results-chart-tabs-btn-list-item">
+                                <button class="buyers-results-chart-tabs-btn " type="button" data-view="About">
+                                    Data Source
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="buyers-results-chart-tabs-content active" data-content="Trade Trend">
+                            <div class="d-flex justify-content-end mb-5">
+                                <button class="download-btn" type="button">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+                            </div>
+                            <div id="buyers-results-chart"></div>
+                        </div>
+                        <div class="buyers-results-chart-tabs-content" data-content="Country of Origin">
+                            <div class="d-flex justify-content-end mb-5">
+                                <button class="download-btn" type="button">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+                            </div>
+                            <div id="buyers-results-chart-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid px-4">
             <div class="row">
                 <div class="col-12">
@@ -1391,6 +1459,166 @@
 
 <?php include "./includes/footer.php" ?>
 <script src="./assets/js/trade-analysis.js"></script>
+
+<script>
+    Highcharts.chart('buyers-results-chart', {
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        yAxis: [{
+            title: {
+                text: ''
+            },
+            labels: {
+                style: {
+                    fontSize: '12',
+                    fontWeight: '500',
+                    fontFamily: 'Poppins, sans-serif',
+                    color: '#000'
+                }
+            }
+        }, {
+            title: {
+                text: ''
+            },
+            labels: {
+                style: {
+                    fontSize: '12px',
+                    fontWeight: '500',
+                    fontFamily: 'Poppins, sans-serif',
+                    color: '#000'
+                }
+            },
+            opposite: true
+        }],
+
+        xAxis: {
+            labels: {
+                style: {
+                    fontSize: '12px',
+                    fontWeight: '500',
+                    fontFamily: 'Poppins, sans-serif',
+                    color: '#000'
+                }
+            }
+        },
+
+
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontSize: '12px',
+                fontWeight: '500',
+                fontFamily: 'Poppins, sans-serif',
+                color: '#555'
+            }
+        },
+
+        exporting: {
+            enabled: false
+        },
+
+        tooltip: {
+            shared: true,
+            headerFormat: '<span style="font-size:12px"><b>{point.key}</b></span>' + '<br>'
+        },
+
+        plotOptions: {
+            series: {
+                pointStart: 2012
+            },
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    enabled: false
+                }
+            }
+        },
+
+        series: [{
+            name: 'Ocean transport',
+            data: [
+                13234, 5000, 11533, 10000, 10398, 12811,
+                15483, 16196, 15060, 13365, 13301
+            ],
+            color: '#FFC65A',
+            yAxis: 0
+        }, {
+            name: 'Households',
+            data: [
+                2000, 6536, 6389, 4000, 6251, 1000,
+                6000, 5040, 5079, 5088, 3500
+            ],
+            color: '#BCD4FF',
+            yAxis: 1
+        }]
+    });
+
+    Highcharts.chart('buyers-results-chart-2', {
+        chart: {
+            styledMode: false
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size: 12px; font-weight: medium;">{point.key}</span><br>',
+            pointFormat: '<span style="font-size: 12px; color: #343434;">{series.name}: </span>' +
+                '<span style="font-size: 12px; color: #343434;">{point.y}%</span>',
+            backgroundColor: '#ffffff',
+            borderColor: '#000',
+            borderRadius: 5,
+            shadow: false
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontSize: '1.2rem',
+                        color: '#343434',
+                        fontWeight: 'semibold'
+                    }
+                }
+            }
+        },
+        legend: {
+            enabled: true,
+            itemStyle: {
+                fontSize: '1.2rem',
+                color: '#343434',
+                fontWeight: 'medium'
+            },
+            itemHoverStyle: {
+                color: '#007bff'
+            },
+            itemHiddenStyle: {
+                color: '#ccc'
+            }
+        },
+        series: [{
+            type: 'pie',
+            allowPointSelect: true,
+            keys: ['name', 'y', 'selected', 'sliced'],
+            data: [
+                ['Apple', 27.16, true],
+                ['Samsung', 23.72, false],
+                ['Xiaomi', 11.92, false],
+            ],
+            showInLegend: true
+        }]
+    });
+</script>
 
 
 <script>

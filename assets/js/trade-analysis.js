@@ -193,3 +193,17 @@ function setTags(strTagsArray, tagsInput, tagInput) {
 function setTagsArrayToInput(tagsArray) {
     $('input#search_tags').val(tagsArray);
 }
+
+
+const intelligenceTabs = document.querySelectorAll("[data-view]");
+
+intelligenceTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    intelligenceTabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    $("[data-content]").removeClass("active");
+    $(`[data-content="${tab.dataset.view}"]`).addClass("active");
+    tab.classList.add("active");
+  });
+});
